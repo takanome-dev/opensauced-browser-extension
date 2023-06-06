@@ -1,7 +1,6 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { checkAuthentication } from '../../src/utils/checkAuthentication';
 
-
 const hasOptedLogOut =  vi.fn().mockResolvedValue(false);
 const getCookie = vi.fn();
 const checkTokenValidity = vi.fn().mockResolvedValue(true);
